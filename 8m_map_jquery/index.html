@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3315최다연_Map tracker</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="./logo.png" />
+    <link rel="apple-touch-icon" href="./logo.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBuOpDurdNlmPNeYpOeczcX2EXI_Co_IbQ"></script>
+
+    <script src="m_myLoc.js"></script>
+    <link rel="stylesheet" href="m_myLoc.css" />
+  </head>
+  <body>
+    <div
+      data-role="header"
+      style="
+        background-color: rgb(18, 50, 65);
+        color: rgb(255, 255, 190);
+        text-align: center;
+        text-align: middle;
+        height: 25px;
+        font-size: 15pt;
+        padding: 20px;
+      "
+    >
+      Map Tracker
+    </div>
+
+    <form>
+      <input type="button" id="watch" value="Watch me" />
+      <input type="button" id="clearWatch" value="Clear watch" />
+    </form>
+
+    <div id="map"></div>
+    <div id="location">여러분의위치가 여기에 나타날 것입니다.</div>
+    <div id="distance">서울역과의 거리가 여기에 나타날 것입니다.</div>
+  </body>
+</html>
