@@ -35,7 +35,7 @@ function displayLocation(position) {
   if (map == null) {
     showMap(position.coords);
   } else {
-    scrollMapToPostion(position.coords);
+    scrollMapToPosition(position.coords);
   }
 }
 
@@ -130,7 +130,7 @@ function watchLocation() {
 }
 
 //추가1
-function scrollMapToPostion(coords) {
+function scrollMapToPosition(coords) {
   var latitude = coords.latitude;
   var longitude = coords.longitude;
 

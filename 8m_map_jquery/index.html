@@ -11,36 +11,39 @@
 
     <link
       rel="stylesheet"
-      href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBuOpDurdNlmPNeYpOeczcX2EXI_Co_IbQ"></script>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyBuOpDurdNlmPNeYpOeczcX2EXI_Co_IbQ"></script>
 
     <script src="m_myLoc.js"></script>
     <link rel="stylesheet" href="m_myLoc.css" />
   </head>
-  <body>
-    <div
+  <body style="background-color: rgba(53, 53, 53, 0.918)">
+    <button
       data-role="header"
-      style="
-        background-color: rgb(18, 50, 65);
-        color: rgb(255, 255, 190);
-        text-align: center;
-        text-align: middle;
-        height: 25px;
-        font-size: 15pt;
-        padding: 20px;
-      "
+      button
+      type="button"
+      class="btn btn-lg btn-light btn-block"
+      style="margin-bottom: 7px"
     >
       Map Tracker
-    </div>
+    </button>
 
-    <form>
-      <input type="button" id="watch" value="Watch me" />
-      <input type="button" id="clearWatch" value="Clear watch" />
-    </form>
+    <center>
+      <form>
+        <input type="button" id="watch" value="Watch me" class="btn btn-dark" />
+        <input
+          type="button"
+          id="clearWatch"
+          value="Clear watch"
+          class="btn btn-secondary"
+        />
+      </form>
+    </center>
 
     <div id="map"></div>
     <div id="location">여러분의위치가 여기에 나타날 것입니다.</div>
